@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SunWaySMS Django Sample Source Code</title>
+        <link rel="shortcut icon" href="{% static 'images/fav_icon.png' %}" type="image/x-icon">
+        <link rel='stylesheet prefetch' href='https://unpkg.com/bulma@0.9.0/css/bulma.min.css'>
+        <link rel="stylesheet" href="{% static 'css/tabs.css' %}">
+        <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar is-info">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="https://sunwaysms.com/wp-content/uploads/2022/06/new-logo.png" alt="">
+                </a>
+            </div>
+        </nav>
+        <section class="hero is-info">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+					SunWaySMS Django
+                    </h1>
+                    <h2 class="subtitle">
+					Sample Source Code
+                    </h2>
+                </div>
+            </div>
+            <div class="tabs is-boxed is-centered main-menu" id="nav">
+                <ul>
+                    <li data-target="pane-1" id="1">
+                        <a>
+                            <span class="icon is-small"><i class="fa fa-image"></i></span>
+                            <span>Send Array</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-2" id="2" class="is-active">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-empire"></i></span>
+                            <span>Get Credit</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-3" id="3">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+                            <span>Message Status</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="pane-1">
+					
+				</div>
+                <div class="tab-pane" id="pane-3">
+
+                </div>
+                <div class="tab-pane is-active" id="pane-2">
+           
+          		</div>
+        	</div>
+    </section>
+    <script src="{% static '/js/bulma.js' %}"></script>
+    <script src="{% static 'js/tabs.js' %}"></script>
+</body>
+</html>
+	{% block content %}{% endblock %}
