@@ -13,7 +13,7 @@
     <body>
         <nav class="navbar is-info">
             <div class="navbar-brand">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="https://sunwaysms.com/">
                     <img src="https://sunwaysms.com/wp-content/uploads/2022/06/new-logo.png" alt="">
                 </a>
             </div>
@@ -28,43 +28,23 @@
 					Sample Source Code
                     </h2>
                 </div>
-            </div>
-            <div class="tabs is-boxed is-centered main-menu" id="nav">
-                <ul>
-                    <li data-target="pane-1" id="1">
-                        <a>
-                            <span class="icon is-small"><i class="fa fa-image"></i></span>
-                            <span>Send Array</span>
-                        </a>
-                    </li>
-                    <li data-target="pane-2" id="2" class="is-active">
-                        <a>
-                            <span class="icon is-small"><i class="fab fa-empire"></i></span>
-                            <span>Get Credit</span>
-                        </a>
-                    </li>
-                    <li data-target="pane-3" id="3">
-                        <a>
-                            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
-                            <span>Message Status</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="tab-content">
-                <div class="tab-pane" id="pane-1">
-					
-				</div>
-                <div class="tab-pane" id="pane-3">
+            </div>            
+        </section>
+        <br/>
+        <section>
+            <div class="container">
+                <div class="buttons">
+                    <a class="button is-primary" href="/getcredit/"> دریافت موجودی حساب</a>
+                    <a class="button is-link" href="/sendsms/">ارسال پیام کوتاه</a>
+                    <a class="button is-link" href="https://github.com/sunwaysms"> گیت هاب شرک سان وی</a>
 
                 </div>
-                <div class="tab-pane is-active" id="pane-2">
-           
-          		</div>
-        	</div>
-    </section>
+            </div>
+        </section>
+        {% block content %}{% endblock %}
     <script src="{% static '/js/bulma.js' %}"></script>
     <script src="{% static 'js/tabs.js' %}"></script>
 </body>
 </html>
-	{% block content %}{% endblock %}
+
+

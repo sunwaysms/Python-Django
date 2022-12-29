@@ -1,0 +1,47 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<!-- <form method="POST">
+    {% csrf_token %}
+    <div class="input-group mb-3">
+        <label class="input-group-text">نام کاربری‍‍</label>
+        <input name="username" id="text-content" type="text">
+    </div>
+
+    <div class="input-group mb-3">
+        <label class="input-group-text">کلمه عبور</label>
+        <input name="password" id="text-content" type="text">
+    </div>
+
+    <div class="d-grid">
+        <button type="submit" class="btn btn-success">ارسال</button>
+    </div>
+</form> -->
+<br/>
+<br/>
+<section>
+    <div class="container">
+        <p>نام کاربری و کلمه عبور خود را در سامانه وب سرویس سان وی وارد کنید</p>
+        <br/>
+        <form method="POST" action="{% url 'getcredit' %}">
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <label class="input-group-text">نام کاربری ‍‍</label>
+                <input name="username" id="text-content" type="text">
+            </div>
+        
+            <div class="input-group mb-3">
+                <label class="input-group-text">کلمه عبور</label>
+                <input name="password" id="text-content" type="text">
+            </div>
+        
+            <div class="d-grid">
+                <button type="submit" class="btn btn-success">ارسال</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+{% endblock %}
