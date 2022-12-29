@@ -1,7 +1,7 @@
 # Python-Django
 نمونه کد ساده برای ارتباط وب سرویس سامانه سان وی با فریم ورک جنگو پایتون
 
-[alt text](https://github.com/[sunwaysms]/[Python-Django]/SunWay-Django.png?raw=true)
+![alt text](https://github.com/[sunwaysms]/[Python-Django]/blob/[main]/SunWay-Django.png?raw=true)
 
 ## مراحل راه اندازی یک نسخه در لوکال هاست شما
 
